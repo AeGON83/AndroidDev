@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF003549"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="233dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <EditText
+            android:hint="@string/height"
+            android:layout_margin="10dp"
+            android:id="@+id/inputH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            android:backgroundTint="@color/teal_200"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputW"
+            android:backgroundTint="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            android:ems="10"
+            android:hint="@string/weight"
+            android:inputType="numberDecimal"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.5">
+
+        <Button
+            android:padding="10dp"
+            android:id="@+id/checkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/check" />
+
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/outputResult"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:textSize="30sp"
+            android:ems="10"
+            android:background="@color/teal_700"
+            android:text="" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

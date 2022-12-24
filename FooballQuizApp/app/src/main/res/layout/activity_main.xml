@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fotballback"
+    android:backgroundTint="#99090505"
+    android:backgroundTintMode="src_over"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100pt"
+        android:layout_height="100pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:baselineAlignBottom="false"
+        android:contentDescription="@string/goat_logo"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/goatlogo" />
+
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/welcome_to_the_g_o_a_t_debate"
+        android:textColor="#F79C2C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/questionView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/question_will_be_here"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/lm10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingText"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <Button
+        android:id="@+id/lm10"
+        android:layout_width="45pt"
+        android:layout_height="35pt"
+        android:backgroundTint="#F89E2F"
+        android:text="@string/lm10"
+        android:textColor="#616161"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cr7"
+        app:layout_constraintTop_toBottomOf="@+id/questionView"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/cr7"
+        android:layout_width="45pt"
+        android:layout_height="35pt"
+        android:backgroundTint="#F89E2F"
+        android:text="@string/cr7"
+        android:textColor="#616161"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lm10"
+        app:layout_constraintEnd_toStartOf="@+id/lm10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
