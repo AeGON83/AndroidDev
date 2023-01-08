@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RecyclerViewApp3</string>
+    <string name="name_of_contact">Name of Contact</string>
+    <string name="_9032102040">9032102040</string>
+    <string name="contacts">Contacts</string>
+    <string name="m">M</string>
+</resources>

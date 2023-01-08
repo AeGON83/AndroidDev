@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#575956"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="40dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add To Contacts"
+                android:textStyle="bold"
+                android:fontFamily="@font/acme"
+                android:textSize="35sp"
+                android:layout_gravity="center"
+                android:textColor="#00C853"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/contactName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="20"
+                android:paddingStart="20dp"
+                android:background="#3E3D3D"
+                android:hint="Contact Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#00C853"
+                android:textColor="#00C853"/>
+
+            <EditText
+                android:id="@+id/contactNum"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="20"
+                android:paddingStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="#3E3D3D"
+                android:hint="Contact Number"
+                android:textColor="#00C853"
+                android:textColorHint="#00C853"/>
+
+            <TextView
+                android:id="@+id/errorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text=""
+                android:textColor="#D50000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00C853"
+                android:text="ADD"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
